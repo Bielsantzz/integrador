@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-arroxeado: #6366f1;
+  --roxo-vibrante: #8b5cf6;
+  --roxo-escuro: #402285;
+  --azul-turquesa: #06b6d4;
+  --verde-azulado: #10b981;
+  --lavanda: #bea5fc;
+  --azul-escuro: #1e293b;
+  --azul-acizentado: #475569;
+  --preto:#000000;
+  --branco-fantasma: #f8fafc;
+  --fonte-titulo: "Orbitron", sans-serif;
+  --fonte-principal: "Exo 2", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.historico-container {
+    background-color: red !important;
+    padding: 20px;
+}
+
+.historico-table {
+    border: 3px solid blue !important;
+    width: 100%;
+}
+
+.historico-table th {
+    background-color: green !important;
+    color: white !important;
+}

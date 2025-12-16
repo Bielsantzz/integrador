@@ -1,0 +1,15 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.corpo {
+  flex: 1;
+  width: 100%;
+  padding: 20px 0;
+  background-image: url(https://images.unsplash.com/photo-1663970206579-c157cba7edda?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMHBhcmElMjBwY3xlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

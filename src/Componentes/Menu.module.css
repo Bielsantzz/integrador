@@ -1,0 +1,39 @@
+.corpo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78.5vh;
+}
+
+.menuGrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  max-width: 700px;
+  padding: 100px;
+  margin-top: 0;
+}
+
+.menuItem {
+  background: #000a97;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 12px;
+  transition: 0.2s;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItem:hover,
+.menuItem:focus {
+  background: #003097;
+  transform: scale(1.04);
+  color: #8FCFD8;
+}

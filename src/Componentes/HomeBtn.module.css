@@ -1,0 +1,23 @@
+.fundo {
+  background-color: #000268;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBtn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  background-color: #000000fd;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.homeBtn:hover {
+  transform: scale(1.05);
+}

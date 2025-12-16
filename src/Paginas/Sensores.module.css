@@ -1,0 +1,150 @@
+.container {
+    min-height: 78.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 20px;
+}
+
+.tableWrapper {
+    background: #070068;
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid #00d9ff;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.tableContainer {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 450px; /* controla o tamanho da página */
+    border-radius: 12px;
+    background: #ffffffe6;
+    padding: 20px;
+}
+
+/* Scroll */
+.tableContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+    background: #070068;
+    border-radius: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+    background: rgb(25, 0, 114);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background: rgb(25, 0, 114);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.table th {
+    padding: 16px 20px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.95);
+}
+
+.table th:last-child {
+    border-right: none;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.table td {
+    padding: 14px 20px;
+    color: black;
+    font-size: 1rem;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.table td:last-child {
+    border-right: none;
+}
+
+/* Células específicas */
+.sensorCell {
+    font-weight: 700;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 6px;
+}
+
+.valorCell {
+    font-weight: 700;
+}
+
+.timestampCell {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.emptyMessage {
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .tableWrapper {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tableWrapper {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+}
